@@ -1,0 +1,4 @@
+-w /usr/bin/sudo -p x -k sudo-usage
+-w /bin/bash -p x -k shell-usage
+-a always,exit -F arch=b64 -S execve -F euid=0 -k exec-root
+

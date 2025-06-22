@@ -1,0 +1,14 @@
+[Unit]
+Description=Linux Privileged Session Monitor
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/env bash -c 'DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus /usr/bin/python3 /opt/priv_alerts.py'
+Restart=always
+User=aman
+Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+
+[Install]
+WantedBy=default.target
+
