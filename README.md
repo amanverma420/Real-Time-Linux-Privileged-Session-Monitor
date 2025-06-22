@@ -24,6 +24,13 @@ This is a real-time monitoring system for Linux that detects suspicious privileg
 
 /etc/systemd/system/priv-alert.service # systemd unit file
 
+## 📸 Live Preview
+
+> Here's what it looks like in action!
+
+### ✅ Desktop Notification (via notify-send)
+![Desktop Alert Screenshot](Screenshot_2025-06-22_13_34_33.png)
+
 
 
 ## 🛠️ Installation Steps
